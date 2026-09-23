@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onsdagens hemsida om css-prioritering</title>
+    <!--  länka till css-filen så den används i hemsidan -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--internal css:
+    använd <style>-taggen för att
+    skriva css i html-filen  
+    man kan lägga på olika ställen, t.ex. i head
+    
+    CASCADING: huruvida man skriver över css-filen
+    beror på vad som skrivs först i html-filen
+    om man flyttar ner link-raden under internal css
+    så skriver filen över internal
+    det syns i inspektorn, det ena är överstruket
+    -det syns i inspektorn var en färg kommer ifrån
+    
+    -->
+    <style>
+        div{
+            color: blue;
+        }
+    </style>
+    
+</head>
+
+    <body>
+    <!-- inline css: attribut i taggen 
+     inline kör över internal och external css-->
+    <div style="color:green;">
+        HEJSAN
+        <div>
+            <p>Tjenare</p>
+        </div>
+        <p>Tjenare</p>
+
+    </div>
+     <p>Tjenare</p>
+
+
+
+</body>
+</html>

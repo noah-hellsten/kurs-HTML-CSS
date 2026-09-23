@@ -1,0 +1,9 @@
+body{
+    background-color: orange;
+}
+/*div är en selektor*/
+div{
+    color: red;
+    background-color: cyan;
+}
+
