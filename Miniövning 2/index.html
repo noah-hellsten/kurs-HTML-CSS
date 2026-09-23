@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline css only</title>
+    <title>Inline + internal css only</title>
+
+    <style>
+        .box{
+            border: 2px solid rgb(145, 1, 145);
+            border-radius: 10px 10px;
+            position: relative;
+        }
+        .upperRightCorner{
+            position: absolute;
+            inset: 5px 5px 5px 5px;
+            padding: 10px;
+            border: 2px solid black;
+             border-radius: 50%;
+        }
+        
+    </style>
 </head>
+
+
 <body>
-    <div class="upperBox" >
+    <div class="box box1" >
         <div class="upperRightCorner">
             <p>INVISIBLE</p>
         </div>
         <div class="circle">
             <p>A</p>
-            
+
+        </div>
+        <div class="text">
+            <p>AI</p>
+            <p>Backendutvecklare</p>
+            <a style="display: block;" href="mailto:minimithetrain@gmail.com">minimithetrain@gmail.com</a>
+            <a style="display: block;" href="tel:+46766885566">0766-88-55-66</a>
+
+        </div>
+        <div class="numberBox">
+            #001
         </div>
     </div>
 
-    <div class="lowerBox">
-
+    <div class="box box2">
+        <p>A</p>
     </div>
     <div>
 
