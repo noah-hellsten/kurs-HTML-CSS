@@ -1,0 +1,42 @@
+*{
+    outline: 1px solid black;
+}
+
+body{
+    height: 667px;
+    margin: 0;
+}
+
+/*default is portrait phone view*/
+
+
+nav{
+    outline: 2px solid blue;
+    height: 10%;
+    margin: 1em;
+
+}
+#menu{
+    background-color: green;
+}
+
+#header{
+    background-color: orange;
+    height: 50%;
+}
+
+
+main{
+    background-color: yellow;
+    height: 90%;
+    margin: 1em;
+
+}
+
+#oneBig{
+    background-color: blue;
+}
+
+small{
+    background-color: blueviolet;
+}

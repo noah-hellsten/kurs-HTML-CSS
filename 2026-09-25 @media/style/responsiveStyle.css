@@ -1,0 +1,47 @@
+:root{ /*hela sidan*/
+    /*definiera variabler*/
+    /*sen kan man ändra i variablen här uppe istället för att leta på flera ställen i koden för att ändra en färg*/
+    --themeColor: rgb(168, 216, 24);
+    --newColor: rgb(70, 70, 167);
+}
+
+body{
+    /*använda variabel för body i default*/
+    background-color: var(--themeColor);
+}
+p{ /*desktop, detta är standard*/
+    background-color: cyan;
+    font-size: 16px; /*default*/
+}
+
+div{ /*de ska bli sida vid sida??*/
+    display: inline-block;
+    width: 200px;
+}
+/*detta är till för att göraläsbart på mobilen */
+
+/*när man zoomar in hela sidan ändras p-boxens width (blir mindre)*/
+@media screen and (max-width: 480px) { /*phone*/
+    body{
+        background-color: var(--newColor);
+    }
+    p{
+        background-color: red;
+    /*font-size: 50px;*/
+
+    }
+    div{
+        width: 30%;
+    }
+
+}
+
+
+
+
+
+@media print { /*funkar inte*/
+    p{
+        background-color: green;
+    }
+}
