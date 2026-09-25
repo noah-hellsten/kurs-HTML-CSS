@@ -1,18 +1,15 @@
 *{
-    outline: 1px solid black;
     margin: 0;
-    text-align: auto;
+    text-align: center;
 }
 
 body{
     height: 667px;
-    margin: 0;
 }
 
 /*default is portrait phone view*/
 
 nav{
-    outline: 2px solid blue;
     height: 10%;
 
 }
@@ -71,12 +68,42 @@ main{
             #small1, #small2{
                 display: inline-block;
                 width: 49.5%;
-
+                height: 50%
+            }
+            #small3{
+                height: 50%
             }
         }
     }
+}
 
 @media screen and (min-width: 992px) {
-    
-}
+    nav{
+        height: 10%;
+        div{
+            display: inline-block;
+        }
+        #menu{
+            width: 19%;
+            height: 100%;
+        }
+        #header{
+            width: 80%;
+            height: 100%;
+        }
+    }
+    main{
+        height: 90%;
+        #oneBig{
+            height: 60%;
+        }
+        #buttons{
+            height: 40%;
+            #small1, #small2, #small3{
+                display: inline-block;
+                width: 33%;
+                height: 100%;
+            }
+        }
+    }
 }
