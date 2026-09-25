@@ -1,5 +1,7 @@
 *{
     outline: 1px solid black;
+    margin: 0;
+    text-align: auto;
 }
 
 body{
@@ -9,34 +11,72 @@ body{
 
 /*default is portrait phone view*/
 
-
 nav{
     outline: 2px solid blue;
     height: 10%;
-    margin: 1em;
 
 }
 #menu{
     background-color: green;
+    height: 30%
 }
 
 #header{
     background-color: orange;
-    height: 50%;
+    height: 70%;
 }
 
 
 main{
-    background-color: yellow;
     height: 90%;
-    margin: 1em;
 
 }
 
 #oneBig{
     background-color: blue;
+    height: 61%;
 }
 
-small{
+#buttons{
+    height: 39%;
+}
+
+.small{
     background-color: blueviolet;
+    height: 33.3%;
+}
+
+@media  screen and (min-width: 600px) {
+    nav{
+        height: 10%;
+        div{
+            display: inline-block;
+        }
+        #menu{
+            width: 19%;
+            height: 100%;
+        }
+        #header{
+            width: 80%;
+            height: 100%;
+        }
+    }
+    main{
+        height: 90%;
+        #oneBig{
+            height: 60%;
+        }
+        #buttons{
+            height: 40%;
+            #small1, #small2{
+                display: inline-block;
+                width: 49.5%;
+
+            }
+        }
+    }
+
+@media screen and (min-width: 992px) {
+    
+}
 }
