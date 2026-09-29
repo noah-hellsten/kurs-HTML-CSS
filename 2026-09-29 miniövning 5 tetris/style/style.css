@@ -1,0 +1,29 @@
+.tetris-board {
+  grid-template-columns: repeat(6, 40px);
+  grid-template-rows: repeat(6, 40px);
+  grid-template-areas:
+    ".  .  o1 o2 .  ."
+    "i1 .  o3 o4 .  l1"
+    "i2 .  .  .  .  l2"
+    "i3 .  .  .  l4 l3"
+    "i4 .  t1 t2 t3 ."
+    ".  .  .  t4 .  .";
+  gap: 4px;
+  padding: 12px;
+  width: max-content;
+  background: lavender;
+}
+
+.block {
+  border-radius: 5px;
+}
+
+.i { background: #aaa; }
+.o { background: #bbb; }
+.t { background: #ccc; }
+.l { background: #ddd; }
+
+/* Fortsätt: koppla varje ruta till sitt område! */
+#i1 { grid-area: i1; }
+  
+  
